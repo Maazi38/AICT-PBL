@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cakers</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: #FBE8D3;
+        }
+        header{
+            background-color: #964B00;
+            display: flex;
+            align-items: center;
+            object-fit: cover;
+            padding: 20px;
+            border-radius: 10px;
+            color: #FBE8D3;
+            margin: 20px;
+            box-shadow: 0px 5px 5px rgb(27, 26, 26);
+            justify-content: space-between;
+        }
+        .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo img{
+            width: 40px;
+            height: 40px;
+        }
+        nav ul li{
+            display: inline;
+        }
+        nav ul{
+            gap: 15px;
+            padding: 0;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: #964B00;
+            background-color:#D2915C ;
+            padding: 10px;
+            font-weight: bold;
+            box-shadow: 0px 5px 5px rgb(27, 26, 26);
+            border-radius: 20px;
+        }
+        #slider{
+            overflow: hidden;
+        }
+        #slider figure{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation:  20s slider infinite;
+        }
+        #slider figure img{
+            float: left;
+            width: 20%;
+        }
+        @keyframes slider{
+            0%{
+                left: 0;
+            }
+            20%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            45%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+            70%{
+                left: -200%;
+            }
+            75%{
+                left: -300%;
+            }
+            95%{
+                left: -300%;
+            }
+            100%{
+                left: -400%;
+            }
+        }
+        .welcome{
+            font-style: italic;
+            font-weight: bold;
+            color:black;
+            margin: 30px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #d2915c70;
+            box-shadow: 0px 5px 5px rgb(27, 26, 26);
+        }
+        .welcome h1{
+            font-style: italic;
+            font-weight: bold;
+            color: black;
+            margin: 30px;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: #D2915C;
+            box-shadow: 0px 5px 5px rgb(27, 26, 26);
+        }
+        .welcome p{
+            font-style: italic;
+            font-weight: bold;
+            color:black;
+            margin: 30px;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #D2915C;
+            box-shadow: 0px 5px 5px rgb(27, 26, 26);
+        }
+        .content-1{
+            color: black;
+            margin: 10px 30px;
+            padding: 10px 15px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            gap: 5rem;
+            border-radius: 10px;
+            background-color: #D2915C;
+            box-shadow: 0px 5px 5px rgb(27, 26, 26);
+        }
+        .variety{
+            flex: 1;
+        }
+        
+        .content-1 img{
+            width: 100%;
+            max-width: 400px;
+            object-fit: cover;
+            vertical-align: middle;
+            border-radius: 10px;
+            
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color:#964B00;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .footer-column h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-column p {
+            margin: 0;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo2.png" alt="logo">
+            <em>CAKETROPIA</em>
+        </div>
+        <nav>
+            <ul>
+               <li><a href="index.html" class="active">Home</a></li>
+               <li><a href="Explore.html">Explore</a></li> 
+               <li><a href="About-us.html">About Us</a></li>
+               <li><a href="signup-contact-us.html">Sign Up/Contact Us</a></li>
+               <li><a href="group-members.html">Group Members</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <label for="search-box">Search: </label>
+            <input type="search" id="search-box" placeholder="Search Here">
+        </div>
+        
+    </header>
+    <main>
+        <section class="slides">
+            <div id="slider">
+                <figure>
+                    <img src="images/slider 1.jpeg" alt="slider 1">
+                    <img src="images/slider 2.jpeg" alt="slider 2">
+                    <img src="images/slider 3.jpeg" alt="slider 3">
+                    <img src="images/slider 4.jpeg" alt="slider 4">
+                    <img src="images/slider 1.jpeg" alt="slider 1">
+                </figure>
+            </div>
+            <hr>
+        </section>
+        <div class="welcome">
+            <h1>WELCOME TO CAKETROPIA</h1>
+            <p>
+                Welcome to our charming cake bakery, where every slice tells a story! 
+                Our journey began with a passion for baking and a love for creating delightful 
+                treats that bring joy to our community. At our bakery, we believe that cake is 
+                more than just dessert; it’s a centerpiece for gatherings, a celebration of life’s 
+                moments, and an expression of love. <br><br>We take pride in using only the finest ingredients, 
+                sourced locally whenever possible, to ensure that each cake delivers a mouthwatering experience.
+                 Our talented bakers combine traditional techniques with innovative flavors to craft unique 
+                 creations that cater to all tastes—from classic vanilla and rich chocolate to adventurous
+                  fruit-infused delights. <br><br>Whether you’re celebrating a birthday, wedding, or any special
+                   occasion, our cakes are designed to not only look stunning but taste divine. We also enjoy 
+                   collaborating with our customers to create custom designs that reflect their vision. <br><br>
+                   Thank you for being a part of our sweet journey. We can’t wait to share our passion for baking 
+                   with you and help make your celebrations even more memorable!
+            </p>
+        </div>
+        <hr>
+        <section class="content-1">
+                <img src="images/variety.jpeg" alt="cake varieties">
+                <div class="variety">
+                    <h1>Our Large Variety of Cakes</h1>
+                <p>
+                    At Caketropia, we pride ourselves on offering an exquisite selection of cakes that
+                    cater to every taste and occasion. From our classic vanilla bean and rich chocolate
+                    layers to our signature red velvet and delicate strawberry champagne creations,
+                    each cake is crafted with passion and precision. Our specialty menu features 
+                    indulgent options like triple chocolate mousse, zesty lemon raspberry, and decadent
+                    caramel pecan. For those seeking healthier alternatives, we offer gluten-free, sugar-free,
+                    and vegan options that don't compromise on taste. Our seasonal specials showcase fresh local
+                    ingredients, from summer berry medleys to autumn spice combinations. Whether you're celebrating 
+                    a wedding, birthday, or simply craving something sweet, our master bakers ensure each creation
+                    is a perfect blend of artistry and flavor.
+                </p>  
+                </div>  
+        </section>
+        <hr>
+        <section class="content-2">
+            <h1></h1>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>123 Cake Street, Sweet City</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@thecakers.com</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="quick-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup-contact-us.html">Contact us</a></li>
+                <li><a href="About-us.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://youtube.com/">Youtube</a>
+        </div>
+      </footer>
+
+</body>
+</html>

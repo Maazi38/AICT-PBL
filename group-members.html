@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caketropia</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: #FBE8D3;
+        }
+        header{
+            background-color: #964B00;
+            display: flex;
+            align-items: center;
+            object-fit: cover;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            margin: 20px;
+            box-shadow: 0px 5px 5px rgb(27, 26, 26);
+            justify-content: space-between;
+        }
+        .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo img{
+            width: 40px;
+            height: 40px;
+        }
+        nav ul li{
+            display: inline;
+        }
+        nav ul{
+            gap: 15px;
+            padding: 0;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: #964B00;
+            background-color:#D2915C ;
+            padding: 10px;
+            font-weight: bold;
+            box-shadow: 0px 5px 5px rgb(27, 26, 26);
+            border-radius: 20px;
+        }
+        .mbr-dtl{
+            background-color: #d2915c70;
+            text-align: center;
+            padding: 20px;
+            border-radius:10px ;
+            margin: 20px;
+        }
+        .mbr-dtl h1{
+            background-color: #D2915C;
+            margin:15px 130px;
+            padding: 10px;
+            border-radius: 10px;
+            
+        }
+        .mbr-dtl table{
+            background-color: #D2915C;
+            margin:15px 130px;
+            color:white ;
+            margin: 0 auto;
+            width: 80% ;
+
+        }
+        th{
+            font-weight:bold;
+            color: black;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color:#964B00;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .footer-column h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-column p {
+            margin: 0;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo2.png" alt="logo">
+            <em>CAKETROPIA</em>
+        </div>
+        <nav>
+            <ul>
+               <li><a href="index.html" class="active">Home</a></li>
+               <li><a href="Explore.html">Explore</a></li> 
+               <li><a href="About-us.html">About Us</a></li>
+               <li><a href="signup-contact-us.html">Sign Up/Contact Us</a></li>
+               <li><a href="group-members.html">Group Members</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <label for="search-box">Search: </label>
+            <input type="search" id="search-box" placeholder="Search Here">
+        </div>
+        
+    </header>
+    <main>
+            <section class="mbr-dtl">
+                <h1><em>Members Details</em></h1>
+                <table border="1">
+                    <th>S.no</th>
+                    <th>Names</th>
+                    <th>Rollno</th>
+                    <th>Role</th>
+                <tr>
+                    <td><b>01</b></td>
+                    <td><b>Haris Abdullah Khan</b></td>
+                    <td><b>F24605035</b></td>
+                    <td><b>Sign Up Form/Contact Us</b></td>
+                </tr>      
+               <tr>
+                    <td><b>02</b></td>
+                    <td><b>Maaz Ali</b></td>
+                    <td><b>F24605038</b></td>
+                    <td><b>Homepage + layout</b></td>
+               </tr>       
+               <tr>
+                    <td><b>03</b></td>
+                    <td><b>Muhammad Shaheer-Ul-Haq</b></td>
+                    <td><b>F24605052</b></td>
+                    <td><b>About Us + Explorer</b></td>
+               </tr>            
+               <tr>
+                    <td><b>04</b></td>
+                    <td><b>Muhammad Saad</b></td>
+                    <td><b>F24605054</b></td>
+                    <td><b>About Us + Explorer</b></td>
+               </tr>
+               </table>
+    
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>123 Cake Street, Sweet City</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@thecakers.com</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="quick-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup-contact-us.html">Contact us</a></li>
+                <li><a href="About-us.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://youtube.com/">Youtube</a>
+        </div>
+      </footer>
+
+</body>
+</html>

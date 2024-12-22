@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caketropia</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: #FBE8D3;
+        }
+        header{
+            background-color: #964B00;
+            display: flex;
+            align-items: center;
+            object-fit: cover;
+            padding: 20px;
+            border-radius: 10px;
+            color: #FBE8D3;
+            margin: 20px;
+            box-shadow: 0px 5px 5px rgb(27, 26, 26);
+            justify-content: space-between;
+        }
+        .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo img{
+            width: 40px;
+            height: 40px;
+        }
+        nav ul li{
+            display: inline;
+        }
+        nav ul{
+            gap: 15px;
+            padding: 0;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: #964B00;
+            background-color:#D2915C ;
+            padding: 10px;
+            font-weight: bold;
+            box-shadow: 0px 5px 5px rgb(27, 26, 26);
+            border-radius: 20px;
+        }
+        .explore{
+            text-align: center;
+            border-radius: 10px;
+            background-color: #D2915C;
+            margin: 40px 40px ;
+            padding: 10px;
+
+        }
+        .cards-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+
+        }
+        .cards{
+            width: 325px;
+            background-color: #D2915C;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 4px rgb(0, 0, 0,) ;
+            margin: 20px;
+        }
+        .cards img{
+            height: auto;
+            width: 100%;
+        }
+        .card-content{
+            padding: 20px; 
+        }
+        .card-content h3{
+            font-size: 28px;
+            margin: 8px 8px;
+        }
+        .card-content p{
+            font-size: 15px;
+            line-height: 1.3;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #964B00;
+            color: white;
+            padding: 20px;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .footer-column h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-column p {
+            margin: 0;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo2.png" alt="logo">
+            <em>CAKETROPIA</em>
+        </div>
+        <nav>
+            <ul>
+               <li><a href="index.html" class="active">Home</a></li>
+               <li><a href="Explore.html">Explore</a></li> 
+               <li><a href="About-us.html">About Us</a></li>
+               <li><a href="signup-contact-us.html">Sign Up/Contact Us</a></li>
+               <li><a href="group-members.html">Group Members</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <label for="search-box">Search: </label>
+            <input type="search" id="search-box" placeholder="Search Here">
+        </div>
+        
+    </header>
+    <main>
+        <section class="explore">
+            <h1><em>Explore Our Best Cakes</em></h1>
+        </section>
+        <section class="cards-container">
+            <div class="cards">
+                <img src="https://layers.pk/wp-content/uploads/2021/11/ferrero-square.jpg" alt="ferrero">
+                <div class="card-content">
+                    <h3>Ferror Rocher Cake</h3>
+                    <h4>2.5 lbs</h4>
+                    <p>Made from 100% ferrero hazelnut chocolate and rosted nuts with ferrero rochers on the top!</p>
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://layers.pk/wp-content/uploads/2021/11/rafaelo.jpg" alt="rafaelo">
+                <div class="card-content">
+                    <h3>Rafaelo Cake</h3>
+                    <h4>2.5 lbs</h4>
+                    <p>Super moist vanilla sponge with loads of refaelo & white choclate!</p>
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://layers.pk/wp-content/uploads/2021/11/kit-kat-sqaure.jpg" alt="kit-kat" >
+                <div class="card-content">
+                    <h3>Kit-Kat Cake</h3>
+                    <h4>2.5 lbs</h4>
+                    <p>Our best creamy milky choclate with crunchy kit-kat frosting on a velvety soft vanilla cake spongy!</p>
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://layers.pk/wp-content/uploads/2024/02/Pistachio.jpg" alt="pistachio">
+                <div class="card-content">
+                    <h3>Pistachio Cake</h3>
+                    <h4>2.5 lbs</h4>
+                    <p>Premium-rich Pistachio Cream layered on a Vanilla Sponge & finely grounded fresh Pistachios spread on top!</p>
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://layers.pk/wp-content/uploads/2021/11/Three-Milk-Cake.jpg" alt="three milky" >
+                <div class="card-content">
+                    <h3>Three Milk Cake</h3>
+                    <h4>2.5 lbs</h4>
+                    <p>Vanilla sponge cake in three kind of milk; Whole milk, Evaporated milk and Condensed milk!</p>
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://layers.pk/wp-content/uploads/2021/11/Honey-Cake.jpg" alt="honey cake">
+                <div class="card-content">
+                    <h3>Honey Cake</h3>
+                    <h4>2.5 lbs</h4>
+                    <p>7 layers of soft, Caramelized honey cakes sandwiched between a cloud like burnt honey & Dulce De Leche whipped cream!</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>123 Cake Street, Sweet City</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@thecakers.com</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="quick-links">
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="signup-contact-us.html">Contact us</a></li>
+                <li><a href="About-us.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://youtube.com/">Youtube</a>
+        </div>
+      </footer>
+
+</body>
+</html>
